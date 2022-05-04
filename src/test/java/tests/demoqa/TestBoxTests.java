@@ -13,10 +13,11 @@ public class TestBoxTests {
     static void setUp() {
         //uncomment if you want to keep browser closed after test run
         //Configuration.holdBrowserOpen = true;
+        Configuration.baseUrl = "https://demoqa.com";
     }
 
     @Test
     void fillFormTest() {
-        open("https://demoqa.com/text-box");
+        open("/text-box");
     }
 }
