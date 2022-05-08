@@ -27,7 +27,8 @@ public class TestBoxTests {
 
         open("/text-box");
         $("[id=userName]").setValue(name);
-        $("[id=userEmail]").setValue(email);
+        //# is a shortcut for id=blabla
+        $("#userEmail").setValue(email);
         $("[id=currentAddress]").setValue(currentAddress);
         $("[id=permanentAddress]").setValue(permanentAddress);
         $("[id=submit]").scrollTo().click();
